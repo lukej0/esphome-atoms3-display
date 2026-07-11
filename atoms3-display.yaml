@@ -117,7 +117,8 @@ display:
     update_interval: 1s
     lambda: |-
       // Get friendly name from select and lookup unicode glyph from mapping
-      const char* icon_char = id(icon_map)[id(display_icon).state.c_str()].c_str();
+      std::string icon_str = id(icon_map)[id(display_icon).current_option().c_str()];
+      const char* icon_char = icon_str.c_str();
       
       if (id(screen_colors).current_values.is_on()) {
         // Light is ON -> Use the color from globals
