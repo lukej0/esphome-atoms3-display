@@ -61,7 +61,7 @@ sensor:
 substitutions:
   display_rotation: "0" # Set display rotation: 0, 90, 180, or 270
   font_family: "gfonts://Roboto"
-  font_size_big: "26"
+  font_size_big: "30"
   font_size_small: "20"
   text_align: "TextAlign::CENTER"
   header_x_position: "it.get_width() / 2"
