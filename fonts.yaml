@@ -31,7 +31,7 @@
     - "\U0000eb3b"  # ac_unit
     - "\U0000f076"  # thermostat
     # Water & Weather
-    - "\U0000e798"  # water_drop
+    #- "\U0000e798"  # water_drop
     - "\U0000e430"  # wb_sunny
     - "\U0000e2bd"  # cloud
     - "\U0000ea46"  # nights_stay
