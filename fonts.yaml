@@ -7,7 +7,7 @@
 # Main text font
 - file: "gfonts://Roboto"
   id: my_font
-  size: 26
+  size: 30
 
 # Material Design Icons font with specific glyphs
 # Note: Glyphs list MUST match all icons defined in home_icons.yaml
