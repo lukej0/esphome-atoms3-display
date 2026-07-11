@@ -230,128 +230,29 @@ select:
     optimistic: true
     initial_option: "Home"
     options:
-      # Lighting
-      - "Home"
-      - "Light On"
-      - "Light Off"
-      - "Lamp"
-      - "Brightness"
-      # Climate
-      - "Thermometer"
-      - "Pressure"
-      - "Humidity"
-      - "Hot"
-      - "Cold"
-      - "Fan"
-      - "AC"
-      - "Heater"
-      # Water & Weather
-      - "Water"
-      - "Rain"
-      - "Sunny"
-      - "Moon"
-      - "Weather"
-      # Power
-      - "Power"
-      - "Battery"
-      - "Battery Low"
-      - "Solar"
-      # Security
-      - "Lock"
-      - "Unlock"
-      - "Security"
-      - "Camera"
-      - "Motion"
-      - "Alarm"
-      - "Shield"
-      # Doors & Windows
-      - "Door"
-      - "Door Open"
-      - "Window"
-      - "Garage Door"
-      # Rooms
-      - "Kitchen"
-      - "Bedroom"
-      - "Bathroom"
-      - "Living Room"
-      - "Office"
-      - "Garage"
-      # Furniture
-      - "Chair"
-      - "Bed"
-      - "TV"
-      - "Computer"
-      - "Tablet"
-      # Audio & Media
-      - "Speaker"
-      - "Music"
-      - "Volume"
-      - "Microphone"
-      - "Headphones"
-      - "Radio"
-      # Appliances
-      - "Washer"
-      - "Dryer"
-      - "Coffee"
-      - "Microwave"
-      - "Fridge"
-      # Outdoor
-      - "Garden"
-      - "Tree"
-      - "BBQ"
-      - "Pool"
-      - "Sprinkler"
-      # Transport
-      - "Car"
-      - "Bike"
-      - "Bus"
-      - "Train"
-      - "Airplane"
-      # Connectivity
-      - "WiFi"
-      - "Bluetooth"
-      - "Phone"
-      - "Network"
-      - "Cast"
-      # Notifications
-      - "Notification"
-      - "Alert"
-      - "Info"
-      - "Error"
-      # Actions
-      - "Play"
-      - "Pause"
-      - "Stop"
-      - "Settings"
-      - "More"
-      - "Check"
-      - "Close"
-      - "Add"
-      - "Remove"
-      # Sensors
-      - "Temperature"
-      - "Smoke"
-      - "CO2"
-      # Time
-      - "Clock"
-      - "Timer"
-      - "Alarm Clock"
-      - "Calendar"
-      - "Schedule"
-      # Entertainment
-      - "Gaming"
-      - "Movie"
-      - "Sports"
-      - "Book"
-      - "Photo"
-      # Utilities
-      - "Trash"
-      - "Recycle"
-      - "Filter"
-      - "Tools"
-      - "Repair"
-      # Finance
-      - "Stock"
+    # Standard
+    - "Home"
+    # Climate
+    - "Temperatur"
+    - "Luftdruck"
+    - "Luftfeuchtigkeit"
+    - "Heiß"
+    - "Kalt"
+    # Connectivity
+    - "WiFi"
+    - "Bluetooth"
+    - "Telefon"
+    - "Public"
+    - "Cast"
+    # Notifications
+    - "Benachrichtigung"
+    - "Warnung"
+    - "Info"
+    - "Fehler"
+    # Time
+    - "Uhr"
+    - "Timer"
+    - "Stoppuhr"
     on_value:
       then:
         - component.update: atom_display
