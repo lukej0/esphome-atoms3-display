@@ -28,9 +28,6 @@ ota:
 
 captive_portal:
 
-web_server:
-  version: "3"
-
 # I2C Bus für den Grove Port A (G2=SDA, G1=SCL)
 i2c:
   - id: bus_a
@@ -70,9 +67,9 @@ substitutions:
   header_x_position: "it.get_width() / 2"
   header_y_position: "it.get_height() / 2 - 50"
   text_x_position: "it.get_width() / 2"
-  text_y_position: "it.get_height() / 2 + 35"
+  text_y_position: "it.get_height() / 2 + 45"
   icon_x_position: "it.get_width() / 2"
-  icon_y_position: "it.get_height() / 2 - 7"
+  icon_y_position: "it.get_height() / 2"
 
 globals:
   - id: bg_red
