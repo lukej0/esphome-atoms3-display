@@ -35,7 +35,6 @@
     - "\U0000e88e"  # info
     - "\U0000e000"  # error
     # Time
-    - "\U0000e924"  # watch_later
-    - "\U0000e425"  # timer
-    - "\U0000e935"  # calendar_today
     - "\U0000e8b5"  # schedule
+    - "\U0000e425"  # timer
+    - "\U0000e855"  # alarm
