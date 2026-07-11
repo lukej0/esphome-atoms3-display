@@ -11,7 +11,7 @@
 
 # Material Design Icons font with specific glyphs
 # Note: Glyphs list MUST match all icons defined in home_icons.yaml
-- file: gfonts://Material+Symbols+Outlined
+- file: gfonts://Material+Symbols+Rounded
   id: icon_font
   size: 50
   glyphs:
