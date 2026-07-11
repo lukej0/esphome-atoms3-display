@@ -67,6 +67,8 @@ substitutions:
   font_size_big: "26"
   font_size_small: "20"
   text_align: "TextAlign::CENTER"
+  header_x_position: "it.get_width() / 2"
+  header_y_position: "it.get_height() / 2 - 50"
   text_x_position: "it.get_width() / 2"
   text_y_position: "it.get_height() / 2 + 35"
   icon_x_position: "it.get_width() / 2"
@@ -126,6 +128,9 @@ display:
         // Set text/icon color based on background brightness for contrast
         auto fg_color = (id(bg_red) * 0.299 + id(bg_green) * 0.587 + id(bg_blue) * 0.114) > 0.5 ? Color(0, 0, 0) : Color(255, 255, 255);
         it.fill(bg_color);
+
+        // Draw header
+        it.print($header_x_position, $header_y_position, id(my_header_font), fg_color, TextAlign::TOP_CENTER, id(display_title).state.c_str());
         
         // Draw icon
         it.printf($icon_x_position, $icon_y_position, id(icon_font), fg_color, TextAlign::CENTER, "%s", icon_char);
@@ -135,6 +140,9 @@ display:
       } else {
         // Light is OFF -> Black background, white text/icon
         it.fill(Color(0, 0, 0));
+
+        // Draw header
+        it.print($header_x_position, $header_y_position, id(my_font_small), Color(255, 255, 255), TextAlign::CENTER, id(display_title).state.c_str());
         
         // Draw icon
         it.printf($icon_x_position, $icon_y_position, id(icon_font), Color(255, 255, 255), TextAlign::CENTER, "%s", icon_char);
@@ -198,7 +206,17 @@ text:
   - platform: template
     name: "Display Text"
     id: display_text
-    initial_value: "Hello!"
+    initial_value: "¡Hola!"
+    optimistic: true
+    mode: text
+    on_value:
+      then:
+        - component.update: atom_display
+
+  - platform: template
+    name: "Display Title"
+    id: display_title
+    initial_value: "Info"
     optimistic: true
     mode: text
     on_value:
@@ -220,6 +238,8 @@ select:
       - "Brightness"
       # Climate
       - "Thermometer"
+      - "Pressure"
+      - "Humidity"
       - "Hot"
       - "Cold"
       - "Fan"
