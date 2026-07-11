@@ -14,7 +14,9 @@
 # CLIMATE CONTROL
 # ============================================
 "Thermometer": "\U0000e1ff"       # device_thermostat
-"Hot": "\U0000e80e"               # whatshot
+"Pressure": "\U0000f6dd"          # readiness_score
+"Humidity": "\U0000e798"          # water_drop
+"Hot": "\U0000f16a"               # mode_heat
 "Cold": "\U0000ebd3"              # severe_cold
 "Fan": "\U0000ec0c"               # wind_power
 "AC": "\U0000eb3b"                # ac_unit
