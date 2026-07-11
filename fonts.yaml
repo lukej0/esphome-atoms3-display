@@ -1,4 +1,9 @@
 # Font definitions for AtomS3 Display
+# Header font
+- file: "gfonts://Roboto"
+  id: my_header_font
+  size: 20
+  
 # Main text font
 - file: "gfonts://Roboto"
   id: my_font
@@ -18,11 +23,13 @@
     - "\U0000e1ac"  # brightness_high
     # Climate
     - "\U0000e1ff"  # device_thermostat
-    - "\U0000e80e"  # whatshot
+    - "\U0000f6dd"  # readiness_score
+    - "\U0000e798"  # water_drop
+    - "\U0000f16a"  # mode_heat
     - "\U0000ebd3"  # severe_cold
     - "\U0000ec0c"  # wind_power
     - "\U0000eb3b"  # ac_unit
-    - "\U0000f076"  # thermostat (heater)
+    - "\U0000f076"  # thermostat
     # Water & Weather
     - "\U0000e798"  # water_drop
     - "\U0000e430"  # wb_sunny
