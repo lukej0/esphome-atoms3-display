@@ -69,7 +69,7 @@ substitutions:
   text_x_position: "it.get_width() / 2"
   text_y_position: "it.get_height() / 2 + 45"
   icon_x_position: "it.get_width() / 2"
-  icon_y_position: "it.get_height() / 2 - 2"
+  icon_y_position: "it.get_height() / 2 - 5"
 
 globals:
   - id: bg_red
