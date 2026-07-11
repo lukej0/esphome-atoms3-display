@@ -127,7 +127,7 @@ display:
         it.fill(bg_color);
 
         // Draw header
-        it.print($header_x_position, $header_y_position, id(my_header_font), fg_color, TextAlign::TOP_CENTER, id(display_title).state.c_str());
+        it.print($header_x_position, $header_y_position, id(my_header_font), fg_color, TextAlign::CENTER, id(display_title).state.c_str());
         
         // Draw icon
         it.printf($icon_x_position, $icon_y_position, id(icon_font), fg_color, TextAlign::CENTER, "%s", icon_char);
@@ -139,7 +139,7 @@ display:
         it.fill(Color(0, 0, 0));
 
         // Draw header
-        it.print($header_x_position, $header_y_position, id(my_header_font), Color(255, 255, 255), TextAlign::TOP_CENTER, id(display_title).state.c_str());
+        it.print($header_x_position, $header_y_position, id(my_header_font), Color(255, 255, 255), TextAlign::CENTER, id(display_title).state.c_str());
         
         // Draw icon
         it.printf($icon_x_position, $icon_y_position, id(icon_font), Color(255, 255, 255), TextAlign::CENTER, "%s", icon_char);
