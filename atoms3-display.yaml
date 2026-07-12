@@ -246,6 +246,7 @@ select:
     - "Warnung"
     - "Info"
     - "Fehler"
+    - "Update"
     # Time
     - "Uhr"
     - "Timer"
