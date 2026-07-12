@@ -20,6 +20,7 @@
 "Warnung": "\U0000e002"           # warning
 "Info": "\U0000e88e"              # info
 "Fehler": "\U0000e000"            # error
+"Update": "\U0000f5f4"            # deployed_code_update
 # Time
 "Uhr": "\U0000e8b5"               # schedule
 "Timer": "\U0000e425"             # timer
