@@ -34,6 +34,7 @@
     - "\U0000e002"  # warning
     - "\U0000e88e"  # info
     - "\U0000e000"  # error
+    - "\U0000f5f4"  # deployed_code_update
     # Time
     - "\U0000e8b5"  # schedule
     - "\U0000e425"  # timer
