@@ -99,23 +99,23 @@ mapping:
 display:
   - platform: mipi_spi
     id: atom_display
-    model: GC9A01A
+    model: ILI9488 #GC9A01A
     dimensions:
       height: 128
       width: 128
       offset_height: 1
       offset_width: 2
-      pad_height: 1
-      pad_width: 1
+      #pad_height: 1
+      #pad_width: 1
     transform:
       swap_xy: false
-      mirror_x: true
-      mirror_y: true
+      mirror_x: false #true
+      mirror_y: false #true
     cs_pin: GPIO15
     dc_pin: GPIO33
     reset_pin: GPIO34
     invert_colors: true
-    buffer_size: 100%
+    #buffer_size: 100%
     update_interval: 1s
     lambda: |-
       // Get friendly name from select and lookup unicode glyph from mapping
