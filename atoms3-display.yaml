@@ -155,7 +155,7 @@ display:
 binary_sensor:
   - platform: gpio
     pin: 
-      number: 41
+      number: GPIO41
       inverted: true
       mode:
         input: true
@@ -167,7 +167,6 @@ binary_sensor:
     on_press:
       then:
         - logger.log: "Button Pressed!"
-        - light.toggle: screen_colors
     on_release:
       then:
         - logger.log: "Button Released!"
