@@ -108,9 +108,9 @@ display:
       #pad_height: 1
       #pad_width: 1
     transform:
-      swap_xy: true
-      mirror_x: false #true
-      mirror_y: false #true
+      swap_xy: false
+      mirror_x: true
+      mirror_y: true
     cs_pin: GPIO15
     dc_pin: GPIO33
     reset_pin: GPIO34
