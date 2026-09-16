@@ -27,7 +27,9 @@ api:
 
 ota:
   - platform: esphome
-    password: !secret ota_password
+    # password: !secret ota_password
+    encryption:
+      key: !secret api_encryption_key    
 
 captive_portal:
 
