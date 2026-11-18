@@ -101,7 +101,7 @@ mapping:
 display:
   - platform: mipi_spi
     id: atom_display
-    model: ILI9488 #GC9A01A
+    model: M5STACK-ATOMS3R-GC9107# ILI9488 #GC9A01A
     dimensions:
       height: 128
       width: 128
